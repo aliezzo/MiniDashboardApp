@@ -43,5 +43,14 @@
         <Grid x:Name="gridFooter" Grid.Row="3" Background="#F8B259">
             <Label Content="Developed by Ali Ezzo – C# WPF Project" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
-    </Grid>
+        <Grid x:Name="gridMain" Grid.Row="2" Background="#F3E9DC">
+            <ListView Name="listViewData" Margin="10,10,10,10" Background="#FFFFFF" BorderBrush="#D96F32" BorderThickness="1">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Date" Width="120" DisplayMemberBinding="{Binding Date}" />
+                        <GridViewColumn Header="Value" Width="100" DisplayMemberBinding="{Binding Value}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
 </Window>
